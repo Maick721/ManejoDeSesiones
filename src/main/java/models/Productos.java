@@ -1,7 +1,11 @@
+/*
+ * Fecha: 15/05/2025
+ * Descripcion: Desarrollo de clase con atributos y metodos instanciados con un constructor apra poder mostrar
+ * los atributos y que sean llamados en otra clase.*/
 package models;
 
-// Clase que representa un producto con sus atributos básicos
-public class Productos {
+public class Productos { // Declara la clase Producto
+
     // Identificador único del producto
     private Long id;
     // Nombre del producto

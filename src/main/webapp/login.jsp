@@ -1,32 +1,35 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Maiccol Zurita
-  Date: 19/5/2025
-  Time: 9:45
-  To change this template use File | Settings | File Templates.
---%>
+<!--
+Fecha: 15/05/2025
+Descripcion: Desarrollo de HTML en archivo jsp  para la visualizacion de el ingreso al ingreso de los datos
+del cliente al ingresar a la ruta del jsp.-->
 
 <%@page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- Define el tipo de documento -->
+<html lang="en"> <!-- Inicio del documento HTML con idioma inglés -->
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <title>Login</title> <!-- Título de la página -->
 </head>
 <body>
-<h1>Login de usuario</h1>
-<form action="login" method="post">
+<h1>Login de usuario</h1> <!-- Encabezado principal -->
+<div>
+  <form action="/ManejoSesiones/login" method="post"> <!-- Formulario que envía datos por POST -->
     <div>
-        <label for="username">Nombre de usuario:</label>
-        <input type="text" name="username" id="username" required>
+      <lable for="username">Nombre de usuarios:</lable> <!-- Etiqueta para el usuario (error de ortografía: label) -->
+      <div>
+        <input type="text" name="username" id="username"> <!-- Campo para el nombre de usuario -->
+      </div>
     </div>
     <div>
-        <label for="pass">Password:</label>
-        <input type="password" name="password" id="pass" required>
+      <lable for="pass">Password:</lable> <!-- Etiqueta para la contraseña (error de ortografía: label) -->
+      <div>
+        <input type="password" name="password" id="pass"> <!-- Campo para la contraseña -->
+      </div>
     </div>
     <div>
-        <input type="submit" value="Enviar">
+      <input type="submit" value="Enviar"> <!-- Botón para enviar el formulario -->
     </div>
-</form>
+  </form>
+</div>
 </body>
 </html>
